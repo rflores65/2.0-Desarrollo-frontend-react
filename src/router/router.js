@@ -7,7 +7,7 @@ import LandingPage from '../screens/LandingPage';
 
 import App from '../App';
 
-const basename = process.env.NOD_ENV === 'production' ? '/v2-desarrollo-frontend-react' : '/';
+const basename = process.env.NODE_ENV === 'production' ? '/v2-desarrollo-frontend-react' : '/';
 
 const routes = createBrowserRouter([
     {
