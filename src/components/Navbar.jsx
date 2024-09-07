@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -19,9 +20,6 @@ const Navbar = () => {
                     <Link to="/forms">Form</Link>
                 </li>
             </ul>
-            <div className='navUser'>
-                <p>Bienvenido: {username}</p>
-            </div>
         </nav>
     )
 }
