@@ -1,8 +1,6 @@
-import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    const username = useSelector((state)=>state.form.formData.username)
     return (
         <nav>
             <ul>
