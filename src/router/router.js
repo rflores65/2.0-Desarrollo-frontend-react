@@ -7,6 +7,8 @@ import LandingPage from '../screens/LandingPage';
 
 import App from '../App';
 
+const basename = process.env.NOD_ENV === 'production' ? '/v2-desarrollo-frontend-react' : '/';
+
 const routes = createBrowserRouter([
     {
         path: '/',
@@ -31,6 +33,10 @@ const routes = createBrowserRouter([
             }
         ]
     }
-]);
+],
+{
+    basename: basename
+}
+);
 
 export default routes;
