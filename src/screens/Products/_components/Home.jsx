@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 import {useEffect} from 'react'
 import { setProducts } from "../../../redux/Product/productActions";
 

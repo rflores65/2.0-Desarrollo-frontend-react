@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 const Description = () => {
     const defaultState = useSelector(state =>state.default)
