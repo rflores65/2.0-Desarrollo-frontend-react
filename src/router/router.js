@@ -4,6 +4,7 @@ import Default from '../screens/Default';
 import Products from '../screens/Product';
 import LoginForm from '../screens/LoginForm'
 import LandingPage from '../screens/LandingPage';
+import Dictionary from '../screens/Dictionary';
 
 import App from '../App';
 
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
             {
                 path: '/forms',
                 element: <LoginForm/>
+            },
+            {
+                path: '/dictionary',
+                element: <Dictionary/> 
             }
         ]
     }

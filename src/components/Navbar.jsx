@@ -20,10 +20,13 @@ const Navbar = () => {
                 <li>
                     <Link to="/forms">Form</Link>
                 </li>
+                <li>
+                    <Link to="/dictionary">Dictionary</Link>
+                </li>
             </ul>
             <div className='navUser'>
                 <p>Bienvenido: {username}</p>
-            </div>
+            </div>  
         </nav>
     )
 }

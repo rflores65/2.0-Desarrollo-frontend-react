@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const ModalLogOut = ({ visible, message, action, onClose }) => {
+const ModalInfo = ({ visible, message, onClose }) => {
     if (!visible) {
         return null
     }
@@ -13,13 +13,7 @@ const ModalLogOut = ({ visible, message, action, onClose }) => {
                 transition={{ duration: 0.5 }}
             >
                 <div>
-                    <p>
-                        {message}
-                    
-                            <button  type="button" onClick={action}>
-                                Presiona saqui para salir!!!
-                            </button>
-                    </p>
+                    <p>{message}</p>
                 </div>
                 <button className="close-btn-success" onClick={onClose}>Cerrar</button>
             </motion.div>
@@ -27,4 +21,4 @@ const ModalLogOut = ({ visible, message, action, onClose }) => {
     )
 }
 
-export default ModalLogOut;
+export default ModalInfo;
